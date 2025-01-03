@@ -1,8 +1,6 @@
 
 # PetStore Selenium tests
 
-IDE :Eclipse
-
 Frameworks used: Selenium, Cucumber
 
 Testing framework: TestNG, Allure Report, JUnit
@@ -43,7 +41,7 @@ PostBuild Actions:
 allure report; path : target/surefire-reports
 
 ##To improve
-stale element in some tests runs
+state element in some tests runs
 
 
 
