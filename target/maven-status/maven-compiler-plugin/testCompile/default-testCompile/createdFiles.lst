@@ -1,0 +1,10 @@
+pageObjects\ProductInteractions.class
+configurations\Utils.class
+pageObjects\UserSignUp.class
+petStore\steps\BuyProductSteps.class
+petStore\steps\UserSignUpSteps.class
+petStore\steps\AddProductSteps.class
+configurations\BrowserConfiguration.class
+pageObjects\UserSignIn.class
+petStore\TestRunner.class
+petStore\steps\UserSignInSteps.class

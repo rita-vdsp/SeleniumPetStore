@@ -1,0 +1,155 @@
+Started by user Rita van der Sandt
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Rita_certification
+[Rita_certification] $ cmd /c call C:\WINDOWS\TEMP\jenkins14271957777489374985.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Rita_certification>mvn clean test 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< Rita_Certification:Rita_Certification >----------------
+[INFO] Building Rita_Certification 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ Rita_Certification ---
+[INFO] Deleting C:\ProgramData\Jenkins\.jenkins\workspace\Rita_certification\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Rita_Certification ---
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ Rita_Certification ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Rita_Certification ---
+[INFO] Copying 4 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ Rita_Certification ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to C:\ProgramData\Jenkins\.jenkins\workspace\Rita_certification\target\test-classes
+[INFO] 
+[INFO] --- surefire:3.0.0-M7:test (default-test) @ Rita_Certification ---
+[INFO] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running petStore.TestRunner
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+dez. 05, 2024 3:56:50 DA TARDE org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 131
+dez. 05, 2024 3:56:50 DA TARDE org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 131.0.6778.108. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+dez. 05, 2024 3:56:54 DA TARDE org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 131
+dez. 05, 2024 3:56:54 DA TARDE org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 131.0.6778.108. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+dez. 05, 2024 3:56:57 DA TARDE org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 131
+dez. 05, 2024 3:56:57 DA TARDE org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 131.0.6778.108. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+Scenario Outline: Make purchase on the website        # src/test/resources/AddProductToCart.feature:13
+dez. 05, 2024 3:57:01 DA TARDE org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 131
+dez. 05, 2024 3:57:01 DA TARDE org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 131.0.6778.108. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  Given I have Selenium using "chrome" to add product # petStore.steps.AddProductSteps.i_have_selenium_using_to_add_product(java.lang.String)
+  And I am login into the website                     # petStore.steps.AddProductSteps.i_am_login_into_the_website()
+  And I research my product                           # petStore.steps.AddProductSteps.i_research_my_product()
+  And I add a product to my Cart                      # petStore.steps.AddProductSteps.I_add_a_product_to_my_Cart()
+  Then I should have the product in my cart           # petStore.steps.AddProductSteps.I_should_have_the_product_in_my_cart()
+
+Scenario Outline: Make purchase on the website         # src/test/resources/AddProductToCart.feature:14
+  Given I have Selenium using "firefox" to add product # petStore.steps.AddProductSteps.i_have_selenium_using_to_add_product(java.lang.String)
+  And I am login into the website                      # petStore.steps.AddProductSteps.i_am_login_into_the_website()
+  And I research my product                            # petStore.steps.AddProductSteps.i_research_my_product()
+  And I add a product to my Cart                       # petStore.steps.AddProductSteps.I_add_a_product_to_my_Cart()
+  Then I should have the product in my cart            # petStore.steps.AddProductSteps.I_should_have_the_product_in_my_cart()
+
+Scenario Outline: Make purchase on the website        # src/test/resources/BuyProduct.feature:12
+dez. 05, 2024 3:57:12 DA TARDE org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 131
+dez. 05, 2024 3:57:12 DA TARDE org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 131.0.6778.108. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  Given I have Selenium using "chrome" to buy product # petStore.steps.BuyProductSteps.i_have_selenium_using_to_buy_product(java.lang.String)
+  And I am login in                                   # petStore.steps.BuyProductSteps.i_am_login_in()
+  And I buy a product                                 # petStore.steps.BuyProductSteps.i_buy_a_product()
+  Then I should see an order confirmation             # petStore.steps.BuyProductSteps.i_should_see_an_order_confirmation()
+
+Scenario Outline: Make purchase on the website         # src/test/resources/BuyProduct.feature:13
+  Given I have Selenium using "firefox" to buy product # petStore.steps.BuyProductSteps.i_have_selenium_using_to_buy_product(java.lang.String)
+  And I am login in                                    # petStore.steps.BuyProductSteps.i_am_login_in()
+  And I buy a product                                  # petStore.steps.BuyProductSteps.i_buy_a_product()
+  Then I should see an order confirmation              # petStore.steps.BuyProductSteps.i_should_see_an_order_confirmation()
+
+Scenario Outline: User SignUp with valid data    # src/test/resources/UserSignIn.feature:13
+dez. 05, 2024 3:57:25 DA TARDE org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 131
+dez. 05, 2024 3:57:25 DA TARDE org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 131.0.6778.108. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  Given I have Selenium using "chrome" for login # petStore.steps.UserSignInSteps.i_have_selenium_using_for_login(java.lang.String)
+  Given I am at the Pet Store Login page         # petStore.steps.UserSignInSteps.i_am_at_the_pet_store_login_page()
+  When I enter a valid username and password     # petStore.steps.UserSignInSteps.i_enter_a_valid_username_and_password()
+  And I click on the Login button                # petStore.steps.UserSignInSteps.i_click_on_the_login_button()
+  Then I should be redirected to the home page   # petStore.steps.UserSignInSteps.i_should_be_redirected_to_the_home_page()
+
+Scenario Outline: User SignUp with valid data     # src/test/resources/UserSignIn.feature:14
+  Given I have Selenium using "firefox" for login # petStore.steps.UserSignInSteps.i_have_selenium_using_for_login(java.lang.String)
+  Given I am at the Pet Store Login page          # petStore.steps.UserSignInSteps.i_am_at_the_pet_store_login_page()
+  When I enter a valid username and password      # petStore.steps.UserSignInSteps.i_enter_a_valid_username_and_password()
+  And I click on the Login button                 # petStore.steps.UserSignInSteps.i_click_on_the_login_button()
+  Then I should be redirected to the home page    # petStore.steps.UserSignInSteps.i_should_be_redirected_to_the_home_page()
+
+Scenario Outline: User SignUp with valid data                # src/test/resources/UserSignUp.feature:13
+dez. 05, 2024 3:57:32 DA TARDE org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 131
+dez. 05, 2024 3:57:32 DA TARDE org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 131.0.6778.108. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  Given I have Selenium using "chrome"                       # petStore.steps.UserSignUpSteps.i_have_selenium_using(java.lang.String)
+  Given I am at the Pet Store Register page                  # petStore.steps.UserSignUpSteps.i_am_at_the_pet_store_register_page()
+  When I enter valid user and account information            # petStore.steps.UserSignUpSteps.i_enter_valid_user_and_account_information()
+  And I click on Save Account                                # petStore.steps.UserSignUpSteps.i_click_on_save_account()
+  Then I should be redirected from Register to the home page # petStore.steps.UserSignUpSteps.i_should_be_redirected_from_register_to_the_home_page()
+
+Scenario Outline: User SignUp with valid data                # src/test/resources/UserSignUp.feature:14
+  Given I have Selenium using "firefox"                      # petStore.steps.UserSignUpSteps.i_have_selenium_using(java.lang.String)
+  Given I am at the Pet Store Register page                  # petStore.steps.UserSignUpSteps.i_am_at_the_pet_store_register_page()
+  When I enter valid user and account information            # petStore.steps.UserSignUpSteps.i_enter_valid_user_and_account_information()
+  And I click on Save Account                                # petStore.steps.UserSignUpSteps.i_click_on_save_account()
+  Then I should be redirected from Register to the home page # petStore.steps.UserSignUpSteps.i_should_be_redirected_from_register_to_the_home_page()
+?????????????????????????????????????????????????????????????????????????????????????
+? Share your Cucumber Report with your team at https://reports.cucumber.io          ?
+? Activate publishing with one of the following:                                    ?
+?                                                                                   ?
+? src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    ?
+? src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    ?
+? Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    ?
+? JUnit:                                           @CucumberOptions(publish = true) ?
+?                                                                                   ?
+? More information at https://cucumber.io/docs/cucumber/environment-variables/      ?
+?                                                                                   ?
+? Disable this message with one of the following:                                   ?
+?                                                                                   ?
+? src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      ?
+? src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      ?
+?????????????????????????????????????????????????????????????????????????????????????
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 53.416 s - in petStore.TestRunner
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  58.375 s
+[INFO] Finished at: 2024-12-05T15:57:42Z
+[INFO] ------------------------------------------------------------------------
+[Rita_certification] $ C:\ProgramData\Jenkins\.jenkins\tools\ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation\allure\bin\allure.bat generate C:\ProgramData\Jenkins\.jenkins\workspace\Rita_certification\target\surefire-reports -c -o C:\ProgramData\Jenkins\.jenkins\workspace\Rita_certification\allure-report
+Report successfully generated to C:\ProgramData\Jenkins\.jenkins\workspace\Rita_certification\allure-report
+Allure report was successfully generated.
+Creating artifact for the build.
+Artifact was added to the build.
+Finished: SUCCESS

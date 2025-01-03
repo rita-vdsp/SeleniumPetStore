@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="64.58" tests="8" skipped="0" failures="0" errors="0">
+<testcase classname="Pet Store - add product to cart" name="Make purchase on the website - Example #1.1" time="4.764">
+<system-out><![CDATA[
+Given I have Selenium using "chrome" to add product.........................passed
+And I am login into the website.............................................passed
+And I research my product...................................................passed
+And I add a product to my Cart..............................................passed
+Then I should have the product in my cart...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Pet Store - add product to cart" name="Make purchase on the website - Example #1.2" time="8.494">
+<system-out><![CDATA[
+Given I have Selenium using "firefox" to add product........................passed
+And I am login into the website.............................................passed
+And I research my product...................................................passed
+And I add a product to my Cart..............................................passed
+Then I should have the product in my cart...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Pet Store - buyProduct" name="Make purchase on the website - Example #1.1" time="5.634">
+<system-out><![CDATA[
+Given I have Selenium using "chrome" to buy product.........................passed
+And I am login in...........................................................passed
+And I buy a product.........................................................passed
+Then I should see an order confirmation.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Pet Store - buyProduct" name="Make purchase on the website - Example #1.2" time="9.052">
+<system-out><![CDATA[
+Given I have Selenium using "firefox" to buy product........................passed
+And I am login in...........................................................passed
+And I buy a product.........................................................passed
+Then I should see an order confirmation.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Pet Store - UserSignIn" name="User SignUp with valid data - Example #1.1" time="3.206">
+<system-out><![CDATA[
+Given I have Selenium using "chrome" for login..............................passed
+Given I am at the Pet Store Login page......................................passed
+When I enter a valid username and password..................................passed
+And I click on the Login button.............................................passed
+Then I should be redirected to the home page................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Pet Store - UserSignIn" name="User SignUp with valid data - Example #1.2" time="6.831">
+<system-out><![CDATA[
+Given I have Selenium using "firefox" for login.............................passed
+Given I am at the Pet Store Login page......................................passed
+When I enter a valid username and password..................................passed
+And I click on the Login button.............................................passed
+Then I should be redirected to the home page................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Pet Store - UserSignUp" name="User SignUp with valid data - Example #1.1" time="4.431">
+<system-out><![CDATA[
+Given I have Selenium using "chrome"........................................passed
+Given I am at the Pet Store Register page...................................passed
+When I enter valid user and account information.............................passed
+And I click on Save Account.................................................passed
+Then I should be redirected from Register to the home page..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Pet Store - UserSignUp" name="User SignUp with valid data - Example #1.2" time="7.37">
+<system-out><![CDATA[
+Given I have Selenium using "firefox".......................................passed
+Given I am at the Pet Store Register page...................................passed
+When I enter valid user and account information.............................passed
+And I click on Save Account.................................................passed
+Then I should be redirected from Register to the home page..................passed
+]]></system-out>
+</testcase>
+</testsuite>
